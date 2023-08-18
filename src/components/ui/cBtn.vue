@@ -1,9 +1,9 @@
 <script setup>
-defineProps(["title"]);
+defineProps(["title", "type"]);
 </script>
 
 <template>
-  <button type="button" class="btn">{{ title }}</button>
+  <button :type="type" class="btn">{{ title }}</button>
 </template>
 
 <style>
@@ -15,6 +15,8 @@ defineProps(["title"]);
   border: none;
   text-align: center;
   cursor: pointer;
+
+  display: flex;
 }
 .btn:hover {
   background-color: #ebe8f4;

@@ -45,7 +45,7 @@ defineProps(["icon"]);
   margin: 0;
 }
 
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 500px) {
   .card-feature {
     max-width: fit-content;
   }
