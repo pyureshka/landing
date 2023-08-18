@@ -1,12 +1,13 @@
 <script setup>
-import TopNav from "./view/TopNav.vue";
-
-import HomePage from "./view/HomePage.vue";
+import NavView from "./view/NavView.vue";
+import Home from "./view/HomeView.vue";
+import FooterView from "./view/FooterView.vue";
 </script>
 
 <template>
-  <top-nav />
-  <home-page />
+  <nav-view />
+  <home />
+  <footer-view />
 </template>
 
 <style scoped></style>

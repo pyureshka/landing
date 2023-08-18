@@ -19,4 +19,8 @@ defineProps(["title"]);
 .btn:hover {
   background-color: #ebe8f4;
 }
+
+.btn_center {
+  align-self: center;
+}
 </style>

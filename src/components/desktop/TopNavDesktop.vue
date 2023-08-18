@@ -3,7 +3,7 @@ import User from "../../assets/icons/User.svg";
 import Cart from "../../assets/icons/Cart.svg";
 import Search from "../../assets/icons/Search.svg";
 
-import { mainLinks } from "../../staticData/HomePageData";
+import { navLinks } from "../../staticData/Links";
 </script>
 
 <template>
@@ -26,10 +26,10 @@ import { mainLinks } from "../../staticData/HomePageData";
     </div>
   </div>
 
-  <hr class="header__divider" />
+  <hr class="divider divider_header" />
 
   <ul class="header__links-list">
-    <li v-for="link in mainLinks">
+    <li v-for="link in navLinks">
       <a :href="`${link.link}`"> {{ link.title }}</a>
     </li>
   </ul>

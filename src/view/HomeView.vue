@@ -1,8 +1,8 @@
 <script setup>
-import CardFeature from "../components/ui/CardFeature.vue";
-import CardSale from "../components/ui/CardSale.vue";
+import CardFeature from "../components/CardFeature.vue";
+import CardSale from "../components/CardSale.vue";
 
-import { featureInfo } from "../staticData/HomePageData";
+import { features } from "../staticData/CompanyInfo";
 import { products } from "../staticData/ProductData";
 </script>
 
@@ -17,7 +17,7 @@ import { products } from "../staticData/ProductData";
 
           <div class="content__main">
             <card-feature
-              v-for="item in featureInfo"
+              v-for="item in features"
               :key="item.title"
               :icon="item.icon"
             >
@@ -41,50 +41,9 @@ import { products } from "../staticData/ProductData";
             />
           </div>
 
-          <btn title="View collection" class="btn_center" />
+          <c-btn title="View collection" class="btn_center" />
         </div>
       </section-block>
     </wrapper>
   </page>
 </template>
-
-<style>
-.content {
-  display: flex;
-  flex-direction: column;
-  row-gap: 2rem;
-}
-
-.content__title {
-  font-size: var(--text-h1);
-  font-weight: 400;
-
-  margin: 0;
-}
-
-.content__title_center {
-  align-self: center;
-}
-
-.content__main {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  row-gap: 2rem;
-}
-
-.content__main_overflow {
-  max-height: 500px;
-
-  overflow: hidden;
-}
-@media screen and (max-width: 700px) {
-  .content__main_overflow {
-    max-height: 1000px;
-  }
-}
-
-.btn_center {
-  align-self: center;
-}
-</style>
