@@ -8,12 +8,8 @@ import Search from "../../assets/icons/Search.svg";
     <span class="header__logo header__logo_mobile">Avion</span>
 
     <div class="header__actions header__actions_left">
-      <a href="/">
-        <img :src="Search" alt="Search Icon" class="icon-action" />
-      </a>
-      <a href="/">
-        <img :src="Menu" alt="User Icon" class="icon-action" />
-      </a>
+      <c-btn icon="Search" class="btn_flat btn_dense" />
+      <c-btn icon="Menu" class="btn_flat btn_dense" />
     </div>
   </div>
 </template>
