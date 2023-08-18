@@ -4,11 +4,7 @@ defineProps(["icon"]);
 
 <template>
   <div class="card-feature">
-    <img
-      :src="`src/assets/icons/${icon}.svg`"
-      :alt="`${icon}`"
-      class="card-feature__icon"
-    />
+    <c-icon :name="icon" class="card-feature__icon"></c-icon>
 
     <h2 class="card-feature__title">
       <slot name="title" />

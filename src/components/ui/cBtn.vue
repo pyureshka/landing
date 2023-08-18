@@ -4,7 +4,7 @@ defineProps(["title", "type", "icon"]);
 
 <template>
   <button :type="type" class="btn">
-    <img v-if="icon" :src="`src/assets/icons/${icon}.svg`" alt="Button Icon" />
+    <c-icon :name="icon"></c-icon>
 
     {{ title }}
   </button>

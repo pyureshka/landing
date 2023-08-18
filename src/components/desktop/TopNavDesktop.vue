@@ -12,7 +12,7 @@ import { navLinks } from "../../staticData/Links";
   <div class="header__section">
     <div class="header__actions header__actions_right">
       <a href="/">
-        <img :src="Search" alt="Search Icon" class="icon-action" />
+        <c-icon name="IconSearch" class="icon-action"></c-icon>
       </a>
     </div>
 
@@ -20,10 +20,10 @@ import { navLinks } from "../../staticData/Links";
 
     <div class="header__actions header__actions_left">
       <a href="/">
-        <img :src="Cart" alt="Cart Icon" class="icon-action" />
+        <c-icon name="IconCart" class="icon-action"></c-icon>
       </a>
       <a href="/">
-        <img :src="User" alt="User Icon" class="icon-action" />
+        <c-icon name="IconUser" class="icon-action"></c-icon>
       </a>
     </div>
   </div>
