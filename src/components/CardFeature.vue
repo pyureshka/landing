@@ -29,6 +29,7 @@ defineProps(["icon"]);
 .card-feature__icon {
   height: 2rem;
   width: 2rem;
+  fill: var(--color-primary);
 }
 
 .card-feature__title {

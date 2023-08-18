@@ -110,6 +110,7 @@ body{
 .icon-action {
   width: 1rem;
   height: 1rem;
+  fill: var(--color-primary)
 }
 
 /* content container */
