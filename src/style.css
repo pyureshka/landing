@@ -73,26 +73,6 @@ body{
   background: rgba(0, 0, 0, 0.1);
 }
 
-.header__links-list {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-
-  display: flex;
-  justify-content: center;
-  column-gap: 4rem;
-  flex-wrap: wrap;
-}
-
-.header__links-list a {
-  text-decoration: none;
-  color: var(--color-light-primary);
-}
-
-.header__links-list a:visited {
-  color: var(--color-light-primary);
-}
-
 .icon-action {
   width: 1rem;
   height: 1rem;

@@ -3,6 +3,8 @@ import User from "../../assets/icons/User.svg";
 import Cart from "../../assets/icons/Cart.svg";
 import Search from "../../assets/icons/Search.svg";
 
+import LinkList from "../../components/LinkList.vue";
+
 import { navLinks } from "../../staticData/Links";
 </script>
 
@@ -28,9 +30,5 @@ import { navLinks } from "../../staticData/Links";
 
   <hr class="divider divider_header" />
 
-  <ul class="header__links-list">
-    <li v-for="link in navLinks">
-      <a :href="`${link.link}`"> {{ link.title }}</a>
-    </li>
-  </ul>
+  <link-list :list="navLinks" items-row="true"></link-list>
 </template>
