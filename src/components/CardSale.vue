@@ -21,7 +21,6 @@ defineProps(["product", "prefix", "postfix"]);
 <style>
 .card-sale {
   cursor: pointer;
-  min-width: fit-content;
 
   display: inline-flex;
   flex-direction: column;
@@ -31,16 +30,11 @@ defineProps(["product", "prefix", "postfix"]);
 .card-sale:hover {
   background-color: #ebe8f4;
 }
-@media screen and (max-width: 1024px) {
-  .card-sale:hover {
-    background-color: unset;
-    color: unset;
-  }
-}
 
 .card-sale__img {
   height: auto;
   width: auto;
+  max-width: 100%;
 
   flex-shrink: 0;
 }
@@ -56,5 +50,16 @@ defineProps(["product", "prefix", "postfix"]);
   margin: 0;
 }
 .card-sale__price {
+}
+
+@media screen and (max-width: 1024px) {
+  .card-sale:hover {
+    background-color: unset;
+    color: unset;
+  }
+
+  .card-sale {
+    flex: 1 0 40%;
+  }
 }
 </style>

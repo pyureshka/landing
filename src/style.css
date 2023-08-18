@@ -134,7 +134,7 @@ body{
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  row-gap: 2rem;
+  gap: 2rem;
 }
 
 .content__main_overflow {
@@ -142,7 +142,7 @@ body{
 
   overflow: hidden;
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 768px) {
   .content__main_overflow {
     max-height: 1000px;
   }
@@ -170,7 +170,7 @@ body{
   display: flex;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 768px) {
   .form {
     flex: 1 0 0;
   }
