@@ -1,9 +1,13 @@
 <script setup>
-defineProps(["title", "type"]);
+defineProps(["title", "type", "icon"]);
 </script>
 
 <template>
-  <button :type="type" class="btn">{{ title }}</button>
+  <button :type="type" class="btn">
+    <img v-if="icon" :src="`src/assets/icons/${icon}.svg`" alt="Button Icon" />
+
+    {{ title }}
+  </button>
 </template>
 
 <style>
@@ -24,5 +28,13 @@ defineProps(["title", "type"]);
 
 .btn_center {
   align-self: center;
+}
+
+.btn_flat {
+  background-color: unset;
+}
+
+.btn_dense {
+  padding: 0.5rem;
 }
 </style>
