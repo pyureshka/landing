@@ -18,7 +18,7 @@ defineProps(["icon"]);
 
 <style>
 .card-feature {
-  max-width: 270px;
+  flex: 1 0 0;
 
   display: inline-flex;
   flex-direction: column;
@@ -41,9 +41,9 @@ defineProps(["icon"]);
   margin: 0;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 768px) {
   .card-feature {
-    max-width: fit-content;
+    flex: auto;
   }
 }
 </style>
