@@ -1,8 +1,4 @@
 <script setup>
-import User from "../../assets/icons/User.svg";
-import Cart from "../../assets/icons/Cart.svg";
-import Search from "../../assets/icons/Search.svg";
-
 import LinkList from "../../components/LinkList.vue";
 
 import { navLinks } from "../../staticData/Links";

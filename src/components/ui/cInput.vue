@@ -15,11 +15,10 @@ const typesPlaceholder = {
   padding: 1rem 2rem;
   color: var(--color-primary);
   border: none;
+  flex: 1 0 0;
 
   display: flex;
   align-items: center;
-  flex: 1 0 0;
-  align-self: stretch;
 }
 
 .input:focus {

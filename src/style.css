@@ -17,6 +17,7 @@ body{
   all: unset;
 }
 
+
 /* nav */
 .header {
   padding: 1rem;
@@ -38,7 +39,6 @@ body{
 .header__logo {
   font-size: 2rem;
   color: var(--color-primary);
-
   flex-grow: 1;
   text-align: center;
 }
@@ -61,6 +61,8 @@ body{
   justify-content: flex-end;
 }
 
+
+/* footer */
 .footer {
   background-color: var(--color-primary);
 }
@@ -121,10 +123,11 @@ body{
 }
 
 .content__title {
+  margin: 0;
+
   font-size: var(--text-h1);
   font-weight: 400;
 
-  margin: 0;
 }
 
 .content__title_center {
@@ -140,14 +143,9 @@ body{
 
 .content__main_overflow {
   max-height: 500px;
-
   overflow: hidden;
 }
-@media screen and (max-width: 768px) {
-  .content__main_overflow {
-    max-height: 1000px;
-  }
-}
+
 
 /* form */
 .form {
@@ -172,12 +170,20 @@ body{
 }
 
 @media screen and (max-width: 768px) {
+  :root {
+    font-size: 12px;
+  }
+
   .form {
     flex: 1 0 0;
   }
 
-  :root {
-    font-size: 12px;
+  .content__main_overflow {
+    max-height: 1000px;
+  }
+
+  .btn:hover {
+    background-color: var(--color-light-grey);
   }
 }
 
