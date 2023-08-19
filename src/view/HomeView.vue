@@ -9,41 +9,37 @@ import { products } from "../staticData/ProductData";
 <template>
   <page>
     <wrapper>
-      <section-block>
-        <div class="content">
-          <h1 class="content__title content__title_center">
-            What makes our brand different
-          </h1>
+      <section class="content">
+        <h1 class="content__title content__title_center">
+          What makes our brand different
+        </h1>
 
-          <div class="content__main">
-            <card-feature
-              v-for="item in features"
-              :key="item.title"
-              :icon="item.icon"
-            >
-              <template #title>{{ item.title }}</template>
-              <template #content>{{ item.content }}</template>
-            </card-feature>
-          </div>
+        <div class="content__main">
+          <card-feature
+            v-for="item in features"
+            :key="item.title"
+            :icon="item.icon"
+          >
+            <template #title>{{ item.title }}</template>
+            <template #content>{{ item.content }}</template>
+          </card-feature>
         </div>
-      </section-block>
+      </section>
 
-      <section-block>
-        <div class="content">
-          <h1 class="content__title">New ceramics</h1>
+      <section class="content">
+        <h1 class="content__title">New ceramics</h1>
 
-          <div class="content__main content__main_overflow">
-            <card-sale
-              v-for="item in products"
-              :key="item.name"
-              :product="item"
-              prefix="£"
-            />
-          </div>
-
-          <c-btn title="View collection" class="btn_center" />
+        <div class="content__main content__main_overflow">
+          <card-sale
+            v-for="item in products"
+            :key="item.name"
+            :product="item"
+            prefix="£"
+          />
         </div>
-      </section-block>
+
+        <c-btn title="View collection" class="btn_center" />
+      </section>
     </wrapper>
   </page>
 </template>

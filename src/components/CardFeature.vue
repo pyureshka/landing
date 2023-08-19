@@ -3,7 +3,7 @@ defineProps(["icon"]);
 </script>
 
 <template>
-  <div class="card-feature">
+  <article class="card-feature">
     <c-icon :name="icon" class="card-feature__icon"></c-icon>
 
     <h2 class="card-feature__title">
@@ -13,7 +13,7 @@ defineProps(["icon"]);
     <p class="card-feature__content">
       <slot name="content" />
     </p>
-  </div>
+  </article>
 </template>
 
 <style>

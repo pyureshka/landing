@@ -26,5 +26,7 @@ import { navLinks } from "../../staticData/Links";
 
   <hr class="divider divider_header" />
 
-  <link-list :list="navLinks" items-row="true"></link-list>
+  <nav class="nav">
+    <link-list :list="navLinks" items-row="true"></link-list>
+  </nav>
 </template>

@@ -2,7 +2,7 @@
 defineProps(["product", "prefix", "postfix"]);
 </script>
 <template>
-  <div class="card-sale">
+  <article class="card-sale">
     <img :src="product.photo" alt="" class="card-sale__img" />
 
     <div class="card-sale__desc">
@@ -16,7 +16,7 @@ defineProps(["product", "prefix", "postfix"]);
         {{ postfix }}
       </span>
     </div>
-  </div>
+  </article>
 </template>
 <style>
 .card-sale {
