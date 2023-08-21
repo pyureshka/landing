@@ -29,7 +29,7 @@ import { products } from "../staticData/ProductData";
       <section class="content">
         <h1 class="content__title">New ceramics</h1>
 
-        <div class="content__main content__main_overflow">
+        <div class="content__main">
           <card-sale
             v-for="item in products"
             :key="item.name"

@@ -149,12 +149,6 @@ body{
   gap: 2rem;
 }
 
-.content__main_overflow {
-  max-height: 500px;
-  overflow: hidden;
-}
-
-
 /* form */
 .form {
   flex: 0 1 50%;
@@ -184,10 +178,6 @@ body{
 
   .form {
     flex: 1 0 0;
-  }
-
-  .content__main_overflow {
-    max-height: 1000px;
   }
 
   .btn:hover {
