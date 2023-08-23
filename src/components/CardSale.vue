@@ -3,7 +3,12 @@ defineProps(["product", "prefix", "postfix"]);
 </script>
 <template>
   <article class="card-sale">
-    <img :src="product.photo" alt="Product photo" class="card-sale__img" />
+    <img
+      :src="product.photo"
+      alt="Product photo"
+      class="card-sale__img"
+      loading="lazy"
+    />
 
     <div class="card-sale__desc">
       <h4 class="card-sale__title">
