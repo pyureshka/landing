@@ -10,11 +10,11 @@ import { products } from "../staticData/ProductData";
   <page>
     <wrapper>
       <section class="content">
-        <h1 class="content__title content__title_center">
+        <h3 class="content__title content__title_feature">
           What makes our brand different
-        </h1>
+        </h3>
 
-        <div class="content__main">
+        <div class="content__main content__main_feature">
           <card-feature
             v-for="item in features"
             :key="item.title"
@@ -29,7 +29,7 @@ import { products } from "../staticData/ProductData";
       <section class="content">
         <h1 class="content__title">New ceramics</h1>
 
-        <div class="content__main">
+        <div class="content__main content__main_listings">
           <card-sale
             v-for="item in products"
             :key="item.name"
@@ -38,7 +38,7 @@ import { products } from "../staticData/ProductData";
           />
         </div>
 
-        <c-btn title="View collection" class="btn_center" />
+        <c-btn title="View collection" class="content_actions btn_center" />
       </section>
     </wrapper>
   </page>

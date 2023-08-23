@@ -6,9 +6,9 @@ defineProps(["icon"]);
   <article class="card-feature">
     <c-icon :name="icon" class="card-feature__icon"></c-icon>
 
-    <h2 class="card-feature__title">
+    <h4 class="card-feature__title">
       <slot name="title" />
-    </h2>
+    </h4>
 
     <p class="card-feature__content">
       <slot name="content" />
@@ -23,28 +23,34 @@ defineProps(["icon"]);
   display: inline-flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 1rem;
 }
 
 .card-feature__icon {
-  height: 2rem;
-  width: 2rem;
+  height: 24px;
+  width: 24px;
   fill: var(--color-primary);
 }
 
 .card-feature__title {
-  font-size: var(--text-h2);
-  font-weight: 400;
-  margin: 0;
+  font-size: var(--text-h4);
+  margin-top: 16px;
 }
 
 .card-feature__content {
-  margin: 0;
+  margin: 8px 0 0 0;
 }
 
 @media screen and (max-width: 768px) {
   .card-feature {
     flex: auto;
+  }
+
+  .card-feature__content {
+    margin-top: 12px;
+  }
+
+  .card-feature__title {
+    font-size: 16px;
   }
 }
 </style>

@@ -12,15 +12,19 @@ defineProps(["title", "type", "icon"]);
 
 <style>
 .btn {
-  padding: 1rem 2rem;
-  width: fit-content;
-  background-color: var(--color-light-grey);
-  color: var(--color-primary);
+  padding: 16px 32px;
+  /* width: fit-content; */
   border: none;
-  text-align: center;
+  background-color: var(--color-light-grey);
+
+  font-family: "Sanva", sans-serif;
+  font-size: 16px;
+  color: var(--color-primary);
+
   cursor: pointer;
 
   display: flex;
+  justify-content: center;
 }
 .btn:hover {
   background-color: #ebe8f4;
@@ -35,6 +39,12 @@ defineProps(["title", "type", "icon"]);
 }
 
 .btn_dense {
-  padding: 0.5rem;
+  padding: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .btn {
+    width: 100%;
+  }
 }
 </style>

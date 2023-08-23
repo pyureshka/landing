@@ -1,9 +1,9 @@
 <script setup>
-defineProps(["list", "itemsRow", "light"]);
+defineProps(["list", "itemsRow", "light", "title"]);
 </script>
 <template>
   <div :class="{ 'link-list': true, 'link-list_light': light }">
-    <span class="link-list__title"><slot /></span>
+    <span v-if="title" class="link-list__title">{{ title }}</span>
 
     <ul
       :class="{
@@ -20,9 +20,9 @@ defineProps(["list", "itemsRow", "light"]);
 
 <style>
 .link-list {
-  display: inline-flex;
+  display: flex;
   flex-direction: column;
-  gap: 1rem;
+  row-gap: 12px;
 }
 
 .link-list * {
@@ -34,8 +34,7 @@ defineProps(["list", "itemsRow", "light"]);
 }
 
 .link-list__title {
-  font-size: var(--text-h2);
-  font-weight: 400;
+  font-size: 16px;
 }
 
 .link-list__link {
@@ -43,11 +42,13 @@ defineProps(["list", "itemsRow", "light"]);
   margin: 0;
   list-style: none;
 
+  font-size: 14px;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
-  column-gap: 4rem;
-  row-gap: 1rem;
+  column-gap: 44px;
+  row-gap: 12px;
   flex-wrap: wrap;
 }
 

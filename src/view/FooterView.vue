@@ -10,17 +10,24 @@ import { companyLinks, categoryLinks, menuLinks } from "../staticData/Links";
 <template>
   <footer class="footer">
     <wrapper>
-      <div class="content">
+      <div class="content content_footer">
         <div class="footer__top">
-          <link-list :list="menuLinks" light="true" class="link-list_light">
-            Menu
-          </link-list>
-          <link-list :list="categoryLinks" class="link-list_light">
-            Categories
-          </link-list>
-          <link-list :list="companyLinks" class="link-list_light">
-            Our company
-          </link-list>
+          <link-list
+            title="Menu"
+            :list="menuLinks"
+            light="true"
+            class="link-list_light"
+          />
+          <link-list
+            title="Categories"
+            :list="categoryLinks"
+            class="link-list_light"
+          />
+          <link-list
+            title="Our company"
+            :list="companyLinks"
+            class="link-list_light"
+          />
 
           <div class="form">
             <span class="form__title form__title_light">
@@ -29,7 +36,7 @@ import { companyLinks, categoryLinks, menuLinks } from "../staticData/Links";
 
             <form action="" class="form__single-input">
               <c-input type="email" class="input_dark"></c-input>
-              <c-btn title="Sing up" type="submit" />
+              <c-btn title="Sing up" type="submit" class="form__btn" />
             </form>
           </div>
         </div>

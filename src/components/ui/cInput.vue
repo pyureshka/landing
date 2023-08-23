@@ -12,10 +12,14 @@ const typesPlaceholder = {
 
 <style>
 .input {
-  padding: 1rem 2rem;
-  color: var(--color-primary);
+  padding: 16px 32px;
   border: none;
+  align-self: stretch;
   flex: 1 0 0;
+
+  font-family: "Sanva", sans-serif;
+  font-size: 16px;
+  color: var(--color-primary);
 
   display: flex;
   align-items: center;
@@ -31,6 +35,12 @@ const typesPlaceholder = {
 }
 
 .input_dark {
-  background-color: var(--color-light-primary);
+  background-color: #ffffff26;
+}
+
+@media screen and (max-width: 768px) {
+  .input {
+    width: 100%;
+  }
 }
 </style>
