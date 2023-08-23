@@ -36,14 +36,9 @@ defineProps(["product", "prefix", "postfix"]);
 
 .card-sale__img {
   height: 375px;
-  width: auto;
-  max-width: 305px;
-  object-fit: contain;
-
-  align-self: stretch;
-  flex: 1 0 0;
-
-  display: flex;
+  width: 305px;
+  max-width: 100%;
+  object-fit: cover;
 }
 
 .card-sale__desc {
@@ -64,9 +59,9 @@ defineProps(["product", "prefix", "postfix"]);
   }
 
   .card-sale__img {
-    width: 100%;
-    align-self: stretch;
-    min-height: 201px;
+    width: 163px;
+    height: 201px;
+    align-self: center;
   }
 }
 </style>
